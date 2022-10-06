@@ -1,0 +1,402 @@
+:root {
+  --color1: rgba(34, 34, 34, 0.8);
+  --color2: rgb(254, 254, 254);
+  --color3: rgb(202, 199, 199);
+  --color4: rgba(255, 255, 255, 0.92);
+  --color5: #e24453;
+  --color6: #bc3643;
+}
+a {
+  text-decoration: none;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", "Arial";
+  color: black;
+  font-size: 14px;
+}
+h1 {
+  color: var(--color5);
+}
+h2 {
+  font-size: 20px;
+}
+body {
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.bodymain {
+  background-image: url(img/bodymain.jpg);
+}
+
+.bodycerificates {
+  background-image: url(img/educate.jpg);
+}
+.bodyprices {
+  background-image: url(img/bodyprices.jpg);
+}
+
+.bodygallery {
+  background-image: url(img/bodygallery.bmp);
+}
+
+.bodycare {
+  background-image: url(img/bodycare.jpg);
+}
+
+.bodycontacts {
+  background-image: url(img/feedback.bmp);
+}
+
+.header {
+  color: rgb(231, 228, 228);
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.logo {
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.underlogo {
+  letter-spacing: 0, 30px;
+  font-size: 22.6px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.line {
+  margin: 30px;
+  color: var(--color3);
+  border-bottom: 3px solid var(--color3);
+  width: 60%;
+  margin-left: 20%;
+  box-shadow: 10px 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  background-color: #4caf50; /* Green */
+  padding: 11px 19px;
+  font-size: 17.5px;
+  margin-bottom: 60px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  box-shadow: 0px 0 6px rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  width: 230px;
+}
+
+.button:hover {
+  background-color: #347b36; /* Green */
+  color: white;
+}
+
+.navigationbox {
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 0px 50px 0px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 988px) {
+  .dropbtn {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  color: rgb(255, 255, 255);
+  width: 700px;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: var(--color3);
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.92);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contentbox {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 988px) {
+  .contentbox {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+  .circle {
+    color: white;
+    background-color: #e24453;
+    border-radius: 15px 100px 15px 100px;
+    padding: 4px 15px 14.5px 15px;
+  }
+}
+
+/* Тело страницы */
+
+.textbox {
+  width: 70%;
+}
+
+.redbox {
+  background-color: var(--color5);
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  color: var(--color2);
+  width: 400px;
+}
+
+.text {
+  line-height: 20px;
+}
+
+.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 988px) {
+  .timemetable,
+  td {
+    min-width: 80px;
+  }
+  .timemetable,
+  h2 {
+    min-width: 140px;
+  }
+}
+
+.adress .right {
+  text-align: right;
+}
+
+.line1 {
+  border-left: 2px solid rgb(202, 199, 199);
+  height: 350px;
+  margin: 30px;
+}
+
+.line2 {
+  color: var(--color3);
+  border-bottom: 2px solid var(--color3);
+}
+
+.map a {
+  text-decoration: underline;
+  color: rgb(78, 2, 255);
+}
+
+.map a:hover {
+  text-decoration: none;
+}
+
+.adress table {
+  width: 100%;
+}
+
+/* галлерея изображений */
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.gallery a {
+  flex-basis: 48%;
+  margin: 1%;
+}
+
+.gallery .item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Отзывы клиентов */
+.feedback {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.clientname {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+.clientdate {
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 0px;
+  margin: 0px;
+  color: grey;
+}
+
+.button2 {
+  color: rgb(255, 255, 255);
+  background-color: #e24453;
+  padding: 11px 19px;
+  font-size: 17.5px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  box-shadow: 0px 0 6px rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  width: 230px;
+}
+
+.button2:hover {
+  background-color: var(--color6);
+  color: white;
+}
+
+/*MAP*/
+
+.map {
+  overflow: hidden;
+}
+
+.map1 {
+  color: #eee;
+  font-size: 12px;
+  top: 0px;
+}
+
+.map2 {
+  color: #eee;
+  font-size: 12px;
+  top: 14px;
+}
+
+.map3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* prices */
+.prices {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.prices li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+.prices ul {
+  padding-left: 0; /* Сдвигаем список влево */
+}
+
+.prices p {
+  color: gray;
+}
+
+.pricebox button {
+  background-color: var(--color5);
+  border-radius: 5px;
+  color: #eee;
+  width: 60px;
+  height: 35px;
+  border: none;
+}
+.pricebox button:hover {
+  cursor: pointer;
+  background-color: var(--color6);
+}
+.pricebox input {
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.more {
+  color: var(--color5);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.more_info {
+  background-color: #bc3643;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.button2,
+h1 {
+  align-self: flex-start;
+}
+
+.feedback {
+  text-align: justify;
+}
+
+.text-box,
+ul,
+li {
+  text-align: justify;
+}
+
+/* podology */
+
+.pod {
+  width: 90%;
+  margin: 0px;
+  padding: 15px;
+}
+
+/* Подология */
+.podolog,
+.images {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.images {
+  border-radius: 10px;
+}
+

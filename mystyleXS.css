@@ -1,0 +1,297 @@
+:root {
+  --color1: rgba(34, 34, 34, 0.8);
+  --color2: rgb(254, 254, 254);
+  --color3: rgb(202, 199, 199);
+  --color4: rgba(255, 255, 255, 0.92);
+  --color5: #e24453;
+}
+a {
+  text-decoration: none;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", "Arial";
+  color: black;
+  font-size: 14px;
+}
+h1 {
+  color: var(--color5);
+  font-size: 20px;
+}
+h2 {
+  font-size: 20px;
+}
+body {
+  background-image: url(img/back.bmp);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.header {
+  color: rgb(202, 199, 199);
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.logo {
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+.underlogo {
+  letter-spacing: 0, 30px;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+.line {
+  margin: 30px;
+  color: var(--color3);
+  border-bottom: 3px solid var(--color3);
+  width: 60%;
+  margin-left: 20%;
+  box-shadow: 10px 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  background-color: #4caf50; /* Green */
+  padding: 11px 19px;
+  font-size: 17.5px;
+  margin-bottom: 60px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  box-shadow: 0px 0 6px rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  width: 50%;
+}
+
+.button:hover {
+  background-color: #347b36; /* Green */
+  color: white;
+}
+
+.navigationbox {
+  background-color: rgba(34, 34, 34, 0.8);
+}
+.navbar {
+  color: var(--color3);
+  width: 700px;
+}
+
+.navbar a {
+  color: var(--color3);
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.92);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contentbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  padding-left: 5%;
+}
+
+.redbox {
+  background-color: var(--color5);
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  color: var(--color2);
+  width: fit-content;
+}
+
+.text {
+  line-height: 20px;
+  width: 100%;
+}
+.textbox {
+  width: 100%;
+}
+.textbox p {
+  text-align: justify;
+}
+.sidebar {
+  width: 100%;
+}
+
+.right {
+  text-align: right;
+}
+
+.map a {
+  text-decoration: underline;
+  color: rgb(78, 2, 255);
+}
+
+.map a:hover {
+  text-decoration: none;
+}
+
+.adress table {
+  width: 100%;
+}
+
+.line1 {
+  border-left: 2px solid rgb(202, 199, 199);
+  height: 350px;
+  margin: 5px;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--color5);
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--color5);
+  color: var(--color2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* images */
+
+.sliderBox img {
+  width: 90%;
+  height: auto;
+
+  margin: 10px;
+}
+
+/* prices */
+.prices {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  font-size: 10px;
+}
+
+.prices,
+h1 {
+  align-self: flex-start;
+}
+.button2,
+h1 {
+  align-self: flex-start;
+}
+
+table .table {
+  width: 100%;
+  font-size: 1px;
+}
+
+.table,
+tr,
+td:first-child {
+  max-width: 50%;
+}
+
+/* podology gallery*/
+
+.text,
+p {
+  font-size: 12px;
+}
+.text,
+ul {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.more_info {
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.pricebox button {
+  height: 30px;
+  
+}
+.pricebox button:hover {
+  cursor: pointer;
+  background-color: var(--color6);
+}
+.pricebox input {
+  width: 60%;
+  height: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
