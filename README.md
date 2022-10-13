@@ -1,6 +1,6 @@
 # Manicure
 Manicurist and Podology website
-[1C-programmer](https://mariazakharova0805.github.io/1C-programmer/)
+[Click me to see it](https://mariazakharova0805.github.io/Manicure/)
 
 
 - Created with HTML, CSS, JS
